@@ -24,7 +24,7 @@ DELETE: It is used to delete records from a database table.<br>
 ```sql
 create table MANAGER(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
 ```
-## insert the following values into the table
+## Insert the following values into the table:
 ```sql
 insert into MANAGER values(7369,'Chethan',2500,500,30000,'30-June-81','clerk',10,'John');
 insert into MANAGER values(7839,'Dileep',3000,400,36000,'1-Jul-82','manager',null,'James');
@@ -52,7 +52,7 @@ delete from MANAGER where salary < 2750;
 ![Screenshot 2023-10-16 142745](https://github.com/Gchethankumar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118348224/9418cca5-669f-499a-a9cc-e93439b1f719)
 
 
-### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
+### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary).
 #### QUERY:
 ```sql
 select ename as "Name",salary * 12 as "Annual Salary" from MANAGER;
@@ -123,7 +123,7 @@ select ename,deptno,salary from MANAGER order by deptno asc,salary desc;
 ![Screenshot 2023-10-16 142929](https://github.com/Gchethankumar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118348224/33c360cc-3f4d-49ae-93cc-304de4ff21e4)
 
 
-### Q12) List the names of employees not belonging to dept no 30,40 & 10
+### Q12) List the names of employees not belonging to dept no 30,40 & 10.
 #### QUERY:
 ```sql
 select ename from MANAGER where deptno not in (30,40,10);
@@ -132,7 +132,7 @@ select ename from MANAGER where deptno not in (30,40,10);
 ![Screenshot 2023-10-16 142938](https://github.com/Gchethankumar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118348224/ed8b4185-1c78-4c65-bbcc-026d7564ecaa)
 
 
-### Q13) Find number of rows in the table EMP
+### Q13) Find number of rows in the table EMP.
 #### QUERY:
 ```sql
 select count(*) from MANAGER;
