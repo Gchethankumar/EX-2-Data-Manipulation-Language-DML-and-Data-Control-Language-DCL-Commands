@@ -29,111 +29,111 @@ insert into MANAGER values(7788,'Dharnesh',4000,0,48000,'12-Aug-82','clerk',50,'
 
 ### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
 
-### QUERY:
+#### QUERY:
 ```sql
  UPDATE MANAGER SET SALARY = SALARY + (SALARY * 10/100);
 ```
-### OUTPUT:
+#### OUTPUT:
 
 ### Q2) Delete the records from manager table where the salary less than 2750.
-### QUERY:
+#### QUERY:
 ```sql
 delete from MANAGER where salary < 2750;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 ### Q3) Display each name of the employee as “Name” and annual salary as “Annual Salary” (Note: Salary in emp table is the monthly salary)
-### QUERY:
+#### QUERY:
 ```sql
 select ename as "Name",salary * 12 as "Annual Salary" from MANAGER;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 ### Q5)	List the names of Clerks from emp table.
-### QUERY:
+#### QUERY:
 ```sql
 select ename from MANAGER where designation = 'clerk';
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q6)	List the names of employee who are not Managers.
-### QUERY:
+#### QUERY:
 ```sql
 select ename from MANAGER where designation <> 'manager';
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q7)	List the names of employees not eligible for commission.
-### QUERY:
+#### QUERY:
 ```sql
 select ename from MANAGER where commission = 0;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q8)	List employees whose name either start or end with ‘s’.
-### QUERY:
+#### QUERY:
 ```sql
 select ename from MANAGER where ename like '%s' or ename like 's%';
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q9) Sort emp table in ascending order by hire-date and list ename, job, deptno and hire-date.
-### QUERY:
+#### QUERY:
 ```sql
 select ename,designation as "job",deptno,hiredate from MANAGER order by hiredate asc;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q10) List the Details of Employees who have joined before 30 Sept 81.
-### QUERY:
+#### QUERY:
 ```sql
 select * from MANAGER where hiredate<to_date('1981-09-30','YYYY-MM-DD')
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q11)	List ename, deptno and sal after sorting emp table in ascending order by deptno and then descending order by sal.
-### QUERY:
+#### QUERY:
 ```sql
 select ename,deptno,salary from MANAGER order by deptno asc,salary desc;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
-### QUERY:
+#### QUERY:
 ```sql
 select ename from MANAGER where deptno not in (30,40,10);
 ```
-### OUTPUT:
+#### OUTPUT:
 
 ### Q13) Find number of rows in the table EMP
-### QUERY:
+#### QUERY:
 ```sql
 select count(*) from MANAGER;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q14) Find maximum, minimum and average salary in EMP table.
-### QUERY:
+#### QUERY:
 ```sql
 select max(salary) from MANAGER;
 select min(salary) from MANAGER;
 select avg(salary) from MANAGER;
 ```
-### OUTPUT:
+#### OUTPUT:
 
 
 ### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
-### QUERY:
+#### QUERY:
 ```sql
 SELECT designation AS job, count(*) AS num_employees from MANAGER GROUP BY designation ORDER BY num_employees DESC;
 ```
-### OUTPUT:
+#### OUTPUT:
