@@ -15,6 +15,11 @@ UPDATE: It is used to update existing data within a table.<br>
 DELETE: It is used to delete records from a database table.<br>
 </div>
 
+```
+ Program Developed by: Chethan kumar G
+ Register number: 212222240022
+```
+
 ## Create the table as given below:
 ```sql
 create table MANAGER(enumber number(6),ename char(15),salary number(5),commission number(4),annualsalary number(7),Hiredate date,designation char(10),deptno number(2),reporting char(10));
