@@ -1,4 +1,4 @@
-![Screenshot 2023-10-16 142917](https://github.com/Gchethankumar/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/118348224/f6d0c899-7387-45d7-ab9c-6814d02da90d)# EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands
+# EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands
 ## AIM:
 To create a manager database and execute DML queries using SQL.
 
